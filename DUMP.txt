@@ -1,0 +1,36 @@
+
+
+t@m:~/LiddleGIT/LiddleMrGitHub/github$ git clone git@github.com:LiddleMrGitHub/HulloRepo.git
+Cloning into 'HulloRepo'...
+The authenticity of host 'github.com (20.248.137.48)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+warning: You appear to have cloned an empty repository.
+
+
+t@m:~/LiddleGIT/LiddleMrGitHub/github/HulloRepo$ echo "# HulloRepo" >> README.md
+t@m:~/LiddleGIT/LiddleMrGitHub/github/HulloRepo$ git add README.md
+t@m:~/LiddleGIT/LiddleMrGitHub/github/HulloRepo$ git commit -m "first commit"
+[main (root-commit) 77fbfc1] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+
+t@m:~/LiddleGIT/LiddleMrGitHub/github/HulloRepo$ git branch -M main
+t@m:~/LiddleGIT/LiddleMrGitHub/github/HulloRepo$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:LiddleMrGitHub/HulloRepo.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+
+t@m:~/LiddleGIT/LiddleMrGitHub/github/HulloRepo$ date; whoami
+Mon 10 Jul 2023 11:32:23 NZST
+t
+
+END
